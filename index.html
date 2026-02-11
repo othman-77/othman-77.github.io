@@ -18,11 +18,22 @@
 
   <!-- Main CSS -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .cv-preview {
+      max-width: 250px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .cv-preview:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 
 <body class="index-page">
 
-<!-- ======= HEADER ======= -->
 <header id="header" class="header dark-background d-flex flex-column">
   <i class="header-toggle d-xl-none bi bi-list"></i>
 
@@ -52,10 +63,8 @@
   </nav>
 </header>
 
-<!-- ======= MAIN ======= -->
 <main class="main">
 
-<!-- ======= HERO ======= -->
 <section id="hero" class="hero section dark-background">
   <div class="container text-center" data-aos="fade-up">
     <h2>Othman La Porta</h2>
@@ -68,7 +77,6 @@
   </div>
 </section>
 
-<!-- ======= ABOUT ======= -->
 <section id="about" class="about section">
   <div class="container section-title" data-aos="fade-up">
     <h2>À propos</h2>
@@ -104,7 +112,6 @@
   </div>
 </section>
 
-<!-- ======= SKILLS ======= -->
 <section id="skills" class="skills section light-background">
   <div class="container section-title" data-aos="fade-up">
     <h2>Compétences techniques</h2>
@@ -123,7 +130,6 @@
   </div>
 </section>
 
-<!-- ======= RESUME ======= -->
 <section id="resume" class="resume section">
   <div class="container section-title" data-aos="fade-up">
     <h2>Parcours</h2>
@@ -139,7 +145,6 @@
   </div>
 </section>
 
-<!-- ======= PORTFOLIO ======= -->
 <section id="portfolio" class="portfolio section light-background">
   <div class="container section-title" data-aos="fade-up">
     <h2>Projets techniques</h2>
@@ -168,27 +173,43 @@
   </div>
 </section>
 
-<!-- ======= CONTACT ======= -->
 <section id="contact" class="contact section">
   <div class="container section-title" data-aos="fade-up">
     <h2>Contact</h2>
   </div>
 
-  <div class="container">
+  <div class="container text-center" data-aos="fade-up">
     <p><strong>Email :</strong> othmanlaporta84@gmail.com</p>
     <p><strong>Téléphone :</strong> 07 44 58 75 52</p>
     <p><strong>Ville :</strong> Nangis</p>
+
+    <div class="mt-4">
+      <h4 class="mb-3">Mon CV</h4>
+
+      <a href="assets/CV_Othman_LaPorta.pdf" download>
+        <img src="assets/img/cv-othman.png"
+             alt="CV Othman La Porta"
+             class="img-fluid shadow rounded cv-preview mb-3">
+      </a>
+
+      <br>
+
+      <a href="assets/CV_Othman_LaPorta.pdf"
+         download
+         class="btn btn-primary">
+        📄 Télécharger mon CV
+      </a>
+    </div>
+
   </div>
 </section>
 
 </main>
 
-<!-- ======= FOOTER ======= -->
 <footer class="footer light-background text-center">
   <p>© 2026 – Othman La Porta</p>
 </footer>
 
-<!-- Vendor JS -->
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/vendor/aos/aos.js"></script>
 <script src="assets/vendor/typed.js/typed.umd.js"></script>
